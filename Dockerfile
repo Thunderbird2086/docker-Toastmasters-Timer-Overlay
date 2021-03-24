@@ -5,10 +5,10 @@ MAINTAINER Thunderbird2086 <37539914+Thunderbird2086@users.noreply.github.com>
 WORKDIR /opt
 
 # Install Toastmasters Timer Overlay (Bug fix Branch from Thunderbird2086)
-RUN wget https://github.com/Thunderbird2086/Toastmasters-Timer-Overlay/archive/refs/heads/small-changes.zip
+RUN wget https://github.com/Thunderbird2086/Toastmasters-Timer-Overlay/archive/refs/tags/latest.zip
 
-RUN unzip small-changes.zip
-RUN mv Toastmasters-Timer-Overlay-small-changes Toastmasters-Timer-Overlay
+RUN unzip latest.zip
+RUN mv Toastmasters-Timer-Overlay-latest Toastmasters-Timer-Overlay
 
 RUN cd Toastmasters-Timer-Overlay; npm install; npm run build
 
